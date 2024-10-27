@@ -1,0 +1,42 @@
+{
+    "dashboard": {
+      "title": "Financial Portfolio Dashboard",
+      "sections": [
+        {
+          "id": "asset_allocation",
+          "title": "Asset Allocation",
+          "type": "pie_chart",
+          "data": [
+            { "assetType": "Stocks", "percentage": 40 },
+            { "assetType": "Bonds", "percentage": 30 },
+            { "assetType": "Real Estate", "percentage": 20 },
+            { "assetType": "Cash", "percentage": 10 }
+          ]
+        },
+        {
+          "id": "market_trends",
+          "title": "Market Trends",
+          "type": "line_chart",
+          "data": [
+            { "date": "2024-10-01", "value": 10000 },
+            { "date": "2024-10-02", "value": 10150 },
+            { "date": "2024-10-03", "value": 10200 },
+            { "date": "2024-10-04", "value": 10050 },
+            { "date": "2024-10-05", "value": 10500 }
+          ]
+        },
+        {
+          "id": "performance_metrics",
+          "title": "Performance Metrics",
+          "type": "metrics",
+          "data": {
+            "totalValue": 15000,
+            "roi": 12.5,
+            "gains": 2000,
+            "losses": 500
+          }
+        }
+      ]
+    }
+  }
+  

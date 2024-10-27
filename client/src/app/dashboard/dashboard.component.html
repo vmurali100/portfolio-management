@@ -1,0 +1,12 @@
+<div class="dashboard">
+    <h1>{{ dashboard?.title }}</h1>
+    
+    <div *ngFor="let section of dashboard?.sections" class="dashboard-section">
+      <h2>{{ section.title }}</h2>
+      
+      <app-pie-chart *ngIf="section.type === 'pie_chart'" [data]="section.data"></app-pie-chart>
+      <app-line-chart *ngIf="section.type === 'line_chart'" [data]="section.data"></app-line-chart>
+      <app-metric-card *ngIf="section.type === 'metrics'" [data]="section.data"></app-metric-card>
+    </div>
+  </div>
+  
